@@ -35,20 +35,25 @@ const lista = [
 ];
 
 function Item(props) {
-    console.log(props);
-
     const indice = props.indice;
 
     const item = lista[indice];
 
-    return <div>{item.nome}</div>;
+    return (
+        <div>
+            {item.nome}
+            <br />
+            <img src={item.imagemUrl} alt={item.nome} width="200" />
+        </div>
+    );
 }
 
 function Lista() {
     return (
         <div>
-            <Item indice={0} />
-            <Item indice={1} />
+            {lista.map((item, index) => (
+                <Item indice={index} key={index} />
+            ))}
         </div>
     );
 }
