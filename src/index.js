@@ -34,8 +34,12 @@ const lista = [
     },
 ];
 
-function Item() {
-    const item = lista[0];
+function Item(props) {
+    console.log(props);
+
+    const indice = props.indice;
+
+    const item = lista[indice];
 
     return <div>{item.nome}</div>;
 }
@@ -43,8 +47,8 @@ function Item() {
 function Lista() {
     return (
         <div>
-            <Item />
-            <Item />
+            <Item indice={0} />
+            <Item indice={1} />
         </div>
     );
 }
