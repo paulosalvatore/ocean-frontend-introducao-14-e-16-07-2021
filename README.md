@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Frontend - Introdução
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Linguagens
 
-## Available Scripts
+**Linguagem de programação:** JavaScript, TypeScript, PHP, Java, Kotlin, C#, C++, Python, ...
 
-In the project directory, you can run:
+**Linguagem interpretada:** JavaScript, Python, PHP, ...
 
-### `npm start`
+Temos um código e um software que interpreta esse código, executando-o.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Exemplo:** No Python, temos um script, que é passado para um software chamado `python.exe`. Esse software interpreta aquele código Python e e executa.
+- **Exemplo 2:** No JavaScript, temos um script, que é passado para um software, como o `Chrome.exe` ou `node.exe`, que interpreta aquele código JavaScript e executa.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Linguagem compilada:** TypeScript, Java, Kotlin, C#, C++, Python, ...
 
-### `npm test`
+Na linguagem compilada, pegamos um script naquela linguagem e transformar em um arquivo binário. Essa transformação é feita por um software preparado para isso e esse arquivo binário é executado diretamente pelo sistema operacional.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Exemplo:** Podemos pegar um código C#, transformar ele em um arquivo binário com a extensão `.exe`, que o Windows irá executá-lo diretamente. Ou podemos pegar um código Java ou Kotlin e transformar para um arquivo `.apk`, que o Android irá executá-lo diretamente.
+- **Exemplo 2:** Pegamos um código escrito em TypeScript e transpilamos ele para JavaScript, que será interpretado direto pelo software em questão (seja o `Chrome` ou o `NodeJS`).
 
-### `npm run build`
+## Frameworks e Bibliotecas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Biblioteca:** é um pedaço de código que resolve um problema específico.
+  - **Exemplo:** `npm is-odd` resolve apenas o problema de determinar se um número é par ou ímpar.
+- **Framework:** é um conjunto de bibliotecas ou vários códigos que resolvem diversos problemas relacionados a um problema maior. Em alguns casos, o framework também pode determinar assuntos mais avançados, como arquitetura de projetos, estrutura de pastas, etc.
+  - **Exemplo:** `npm express` é um micro-framework, que resolve o problema de criar um servidor HTTP, ou seja, um servidor capaz de conversar utilizando o protocolo principal da web.
+  - **Exemplo 2:** `NestJS` é um framework que resolve o problema de criar um servidor HTTP, utilizando por baixo dos panos o `npm express`, mas criando uma arquitetura por cima, além de unificar várias outras bibliotecas que o `express` não traz.
+  - **Exemplo 3:** `npm ReactJS` é um framework que resolve o problema que criação de páginas com HTML, CSS e JavaScript. Ele não força a estrutura de pastas, mas ele oferece maneiras alternativas de construir uma página da web.
+    - HTML: linguagem de marcação - define a estrutura da página
+    - HTML -> JSX: JSX é semelhante ao que escrevemos em HTML, mas é uma adaptação para construir o HTML usando o JavaScript.
+    - CSS: linguagem de estilização - define o estilo/estilização da página (cores, tamanhos, etc)
+    - JavaScript: linguagem de programação - define o comportamento da página.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
