@@ -19,3 +19,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.item {
+    background: #f6f6f6;
+    border: rgba(223, 225, 229, 0);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
