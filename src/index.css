@@ -7,6 +7,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header,
 .footer {
     background: #2f4d90;
