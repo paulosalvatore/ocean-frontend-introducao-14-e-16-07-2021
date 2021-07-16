@@ -58,7 +58,7 @@ function Item(props) {
     const item = lista[indice];
 
     return (
-        <a href={"visualizar/" + indice}>
+        <a href={"/visualizar/" + indice}>
             <div className="item">
                 <h1 className="item__title">{item.nome}</h1>
                 <img src={item.imagemUrl} alt={item.nome} width="200" />
