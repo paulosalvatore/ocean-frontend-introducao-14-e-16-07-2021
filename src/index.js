@@ -60,18 +60,18 @@ function Lista() {
 
 function Header() {
     return (
-        <div className="header">
+        <header className="header">
             <img
                 src="https://www.oceanbrasil.com/img/general/logoOceanI.png"
                 alt="Samsung Ocean"
                 width="300"
             />
-        </div>
+        </header>
     );
 }
 
 function Footer() {
-    return <div className="footer">Footer</div>;
+    return <footer className="footer">Todos os direitos reservados.</footer>;
 }
 
 function App() {

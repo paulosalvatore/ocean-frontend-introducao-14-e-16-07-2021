@@ -7,10 +7,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.header {
+.header,
+.footer {
     background: #2f4d90;
+    color: #ffffff;
     padding: 20px;
+}
+
+.header {
     font-size: 28px;
+}
+
+.footer {
+    font-size: 14px;
 }
 
 .lista {
