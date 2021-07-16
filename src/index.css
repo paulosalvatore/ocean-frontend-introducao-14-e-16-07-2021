@@ -12,3 +12,10 @@ body {
     background: powderblue;
     font-size: 28px;
 }
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
