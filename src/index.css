@@ -39,3 +39,11 @@ body {
     border-top: 4px solid #2f4d90;
     border-bottom: 4px solid #2f4d90;
 }
+
+.item__title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    border-left: 4px solid #2f4d90;
+    padding-left: 8px;
+}
