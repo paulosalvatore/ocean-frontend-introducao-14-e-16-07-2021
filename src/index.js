@@ -58,10 +58,12 @@ function Item(props) {
     const item = lista[indice];
 
     return (
-        <div className="item">
-            <h1 className="item__title">{item.nome}</h1>
-            <img src={item.imagemUrl} alt={item.nome} width="200" />
-        </div>
+        <a href={"visualizar/" + indice}>
+            <div className="item">
+                <h1 className="item__title">{item.nome}</h1>
+                <img src={item.imagemUrl} alt={item.nome} width="200" />
+            </div>
+        </a>
     );
 }
 
@@ -99,8 +101,12 @@ function ListarItens() {
     );
 }
 
-function VisualizarItem() {
-    return <div>Visualizar item</div>;
+function VisualizarItem(props) {
+    return (
+        <div>
+            <Item indice={props.match.params.id} />
+        </div>
+    );
 }
 
 function App() {
