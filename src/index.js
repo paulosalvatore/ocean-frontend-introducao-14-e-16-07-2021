@@ -40,7 +40,7 @@ function Item(props) {
     const item = lista[indice];
 
     return (
-        <div>
+        <div className="item">
             {item.nome}
             <br />
             <img src={item.imagemUrl} alt={item.nome} width="200" />
@@ -50,7 +50,7 @@ function Item(props) {
 
 function Lista() {
     return (
-        <div>
+        <div className="lista">
             {lista.map((item, index) => (
                 <Item indice={index} key={index} />
             ))}
@@ -63,12 +63,12 @@ function Header() {
 }
 
 function Footer() {
-    return <div>Footer</div>;
+    return <div className="footer">Footer</div>;
 }
 
 function App() {
     return (
-        <div>
+        <div className="app">
             <Header />
             <Lista />
             <Footer />
