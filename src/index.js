@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./index.css";
 
 /*
@@ -73,11 +74,27 @@ function Footer() {
     return <footer className="footer">Todos os direitos reservados.</footer>;
 }
 
+function ListarItens() {
+    return (
+        <div>
+            <Lista />
+        </div>
+    );
+}
+
+function VisualizarItem() {
+    return <div>Visualizar item</div>;
+}
+
 function App() {
     return (
         <div className="app">
             <Header />
-            <Lista />
+            <Switch>
+                <Route path="/" exact={true} component={ListarItens} />
+
+                <Route path="/visualizar/:id" component={VisualizarItem} />
+            </Switch>
             <Footer />
         </div>
     );
@@ -85,7 +102,9 @@ function App() {
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
 );
